@@ -54,7 +54,7 @@ RUN \
     mono-vbnc \
     mediainfo \
     xmlstarlet \
-    avahi-daemon 
+    avahi-daemon \
     nginx && \    
   echo "**** install sonarr ****" && \
   mkdir -p /app/sonarr/bin && \
