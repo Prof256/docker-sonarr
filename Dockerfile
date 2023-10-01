@@ -1,13 +1,13 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
+FROM ubuntu:latest
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
 ARG SONARR_VERSION
-LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="aptalca"
+LABEL build_version="version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL maintainer="Prof"
 
 # set environment variables
 ARG DEBIAN_FRONTEND="noninteractive"
