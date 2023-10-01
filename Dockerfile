@@ -53,7 +53,9 @@ RUN \
     mono-runtime \
     mono-vbnc \
     mediainfo \
-    xmlstarlet && \    
+    xmlstarlet \
+    avahi-daemon 
+    nginx && \    
   echo "**** install sonarr ****" && \
   mkdir -p /app/sonarr/bin && \
   if [ -z ${SONARR_VERSION+x} ]; then \
