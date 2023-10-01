@@ -15,6 +15,8 @@ ENV XDG_CONFIG_HOME="/config/xdg"
 ENV SONARR_BRANCH="main"
 
 RUN \
+apt-get update && \
+apt-get install -y curl && \
  echo "**** add mediaarea repository ****" && \
   curl -L \
     "https://mediaarea.net/repo/deb/repo-mediaarea_1.0-21_all.deb" \
